@@ -34,8 +34,8 @@ std::string EulerApplication::operator()(int argc, const char** argv) const {
     }
     std::ostringstream ss;
     for (int i = 1; i < argc; ++i) {
-        int64_t x, res;
         try {
+            int64_t x, res;
             x = checkArgument(argv[i]);
             res = phi(x);
             ss << res << " ";
