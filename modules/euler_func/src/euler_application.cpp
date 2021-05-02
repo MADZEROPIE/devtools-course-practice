@@ -10,7 +10,7 @@
 #include "include/Euler.h"
 
 std::string EulerApplication::getHelp(const std::string& filename) const {
-    return "This is an application that calculates Euler function" \
+    return "This is an application that calculates Euler function " \
         "for given arguments. \n\n" \
         "Please provide arguments in the following format:\n$ " +
         filename + " <number1> <number2> ...  <numberN>\n\n" \
