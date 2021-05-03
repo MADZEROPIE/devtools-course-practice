@@ -8,7 +8,7 @@ int64_t phi(int64_t n) {
         return 0;
     }
     if (n < 0) {
-        throw(1);
+        throw std::runtime_error("ERROR: NEGATIVE NUMBER\n");
     }
     int64_t result = n;
     for (int64_t i = 2; i * i <= n; ++i)
