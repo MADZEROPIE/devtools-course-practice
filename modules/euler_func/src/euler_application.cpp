@@ -19,7 +19,11 @@ std::string EulerApplication::getHelp(const std::string& filename) const {
 }
 
 inline int64_t checkArgument(const char* argv) {
-    for (int i = 0; argv[i] != '\0'; ++i) {
+    int i = 0;
+    if (argv[i] == '-') {
+        ++i;
+    }
+    for (; argv[i] != '\0'; ++i) {
         if (argv[i] < '0' || argv[i] > '9') {
             throw std::runtime_error("ERROR: Wrong number format!\n");
         }
