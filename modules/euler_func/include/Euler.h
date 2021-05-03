@@ -3,6 +3,8 @@
 #ifndef MODULES_EULER_FUNC_INCLUDE_EULER_H_
 #define MODULES_EULER_FUNC_INCLUDE_EULER_H_
 
+#include <stdexcept>
+
 int64_t phi(int64_t n) {
     if (n == 0) {
         return 0;
