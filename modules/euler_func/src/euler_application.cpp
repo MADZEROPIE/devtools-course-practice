@@ -1,13 +1,12 @@
 // Copyright 2021 Kudriavtsev Alexandr
 
-#include "include/euler_application.h"
-
 #include <sstream>
 #include <stdexcept>
 #include <string>
 #include <vector>
 
 #include "include/Euler.h"
+#include "include/euler_application.h"
 
 std::string EulerApplication::getHelp(const std::string& filename) const {
     return "This is an application that calculates Euler function " \
